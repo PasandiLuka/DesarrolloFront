@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>CSS Grid Layout</h1>
+
+    <h2>1. Grid Básico (3 Columnas)</h2>
+    <div class="grid-container basico">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2>2. Grid Irregular (fr - fraction)</h2>
+    <p>grid-template-columns: 1fr 2fr 1fr;</p>
+    <div class="grid-container fr">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <h2>3. Grid Areas (Layout Completo)</h2>
+    <div class="layout">
+        <header class="area-header">Header</header>
+        <aside class="area-sidebar">Sidebar</aside>
+        <main class="area-main">Main Content</main>
+        <footer class="area-footer">Footer</footer>
+    </div>
+
+</body>
+
+</html>

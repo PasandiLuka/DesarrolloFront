@@ -1,0 +1,71 @@
+/* 
+    Unidades de Medida en CSS
+    Existen unidades absolutas (como px) y relativas (%, rem, em, vw, vh).
+*/
+
+/* 1. Pixeles (px) - Unidad Absoluta */
+.pixel {
+    background-color: lightblue;
+    width: 300px;
+    /* Ancho fijo */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid blue;
+}
+
+/* 2. Porcentaje (%) - Unidad Relativa al padre */
+.porcentaje-padre {
+    background-color: lightgray;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.porcentaje-hijo {
+    background-color: lightcoral;
+    width: 50%;
+    /* 50% del ancho del padre */
+    padding: 10px;
+    color: white;
+}
+
+/* 3. REM - Relative to Root (HTML) */
+/* Si html tiene font-size: 16px (default), 1rem = 16px, 2rem = 32px */
+.rem-container {
+    font-size: 1.5rem;
+    /* ~24px */
+    background-color: lightgreen;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 4. EM - Relative to Parent */
+/* Hereda el tamaño de fuente de su contenedor directo */
+.em-container {
+    font-size: 20px;
+    /* Padre base */
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.em-child {
+    font-size: 1.5em;
+    /* 1.5 veces el tamaño del padre (20px * 1.5 = 30px) */
+    border: 1px solid orange;
+    padding: 0.5em;
+}
+
+/* 5. Viewport Units (vw, vh) - Relativo a la ventana del navegador */
+.viewport {
+    background-color: violet;
+    width: 50vw;
+    /* 50% del ancho del viewport */
+    height: 30vh;
+    /* 30% del alto del viewport */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

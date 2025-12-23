@@ -1,0 +1,101 @@
+/* Display y Position */
+
+/* --- DISPLAY --- */
+
+.block {
+    display: block;
+    /* Por defecto en div, h1, p */
+    background-color: lightblue;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.inline {
+    display: inline;
+    /* Por defecto en span, a, strong */
+    background-color: lightcoral;
+    color: white;
+    padding: 5px;
+    /* Top/Bottom padding afecta visualmente pero no empuja elementos */
+}
+
+.inline-block {
+    display: inline-block;
+    /* Fusión: en línea pero respeta width/height/margin */
+    background-color: lightgreen;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.none {
+    display: none;
+    /* Desaparece del DOM visualmente */
+}
+
+/* --- POSITION --- */
+
+.position-container {
+    background-color: #eee;
+    height: 400px;
+    position: relative;
+    /* Necesario para que el hijo absolute se posicione respecto a ESTE contenedor */
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.static {
+    position: static;
+    /* Default */
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.relative {
+    position: relative;
+    background-color: orange;
+    top: 20px;
+    /* Se mueve 20px hacia abajo desde donde DEBERÍA estar */
+    left: 20px;
+    /* Se mueve 20px a la derecha */
+    padding: 10px;
+    z-index: 10;
+}
+
+.absolute {
+    position: absolute;
+    background-color: red;
+    color: white;
+    bottom: 10px;
+    /* Se pega abajo del PADRE (porque el padre es relative) */
+    right: 10px;
+    /* Se pega a la derecha del PADRE */
+    padding: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    /* Al llegar a 0px del top del viewport, se queda pegado */
+    background-color: purple;
+    color: white;
+    padding: 15px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100;
+    /* Siempre encima */
+}

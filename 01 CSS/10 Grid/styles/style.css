@@ -1,0 +1,80 @@
+/* CSS Grid */
+
+.item {
+    background-color: slateblue;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.grid-container {
+    display: grid;
+    /* Activa Grid */
+    gap: 10px;
+    /* Espacio entre celdas (filas y columnas) */
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 1. Grid Básico */
+.basico {
+    /* Crea 3 columnas de igual ancho (auto) */
+    grid-template-columns: auto auto auto;
+    /* O explícitamente: 100px 100px 100px */
+}
+
+/* 2. Fraction Units */
+.fr {
+    /* 1ra col: 1 parte, 2da col: 2 partes, 3ra col: 1 parte */
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* 3. Grid Areas */
+.layout {
+    display: grid;
+    height: 300px;
+    gap: 5px;
+
+    /* Definimos el mapa del layout */
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+
+    grid-template-rows: 60px 1fr 50px;
+    /* Alto de las filas */
+    grid-template-columns: 150px 1fr;
+    /* Ancho de las cols (sidebar, main) */
+}
+
+/* Asignamos los nombres de área a los elementos */
+.area-header {
+    grid-area: header;
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.area-sidebar {
+    grid-area: sidebar;
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px;
+}
+
+.area-main {
+    grid-area: main;
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+}
+
+.area-footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}

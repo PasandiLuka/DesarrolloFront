@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Etiqueta de párrafo = <p></p>
+    Si queres poner texto de relleno podes poner lorem-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, laudantium dolorum. Fugiat qui rem voluptas harum
+        laborum labore, aut eaque, consequuntur, dolore sed repudiandae odit excepturi? Totam voluptas similique natus?
+    </p>
+
+    <p style="border: 1px solid black;">Este texto a continuacion es negrita: <b>NEGRITA</b></p>
+    <p>Este texto a continuacion es cursiva: <i>CURSIVA</i></p>
+
+    <!-- El elemento <p></p> es en bloque, mientras que <b></b>,<i></i> son elementos en linea -->
+    <p style="background-color: yellow;">Amarillo</p>
+    <b style="background-color: aqua;">Aqua</b>
+
+    <!-- A pesar de ser exactamente lo mismo que lo anterior, estas etiquetas se utilizan para darle importancia y enfatizar palabras para EL BUSCADOR, esto va a posicionar nuestra página mejor a la hora de buscarla. -->
+    <p>Este texto es importante: <strong>IMPORTANTE</strong></p>
+    <p>Este texto es enfático: <en>ENFÁTICO</en>
+    </p>
+
+    <!-- La etiquta <br>(break) sirve para dar un salto de linea.
+    Mientras que la etiquta <hr> sirve para hacer lo mismo solo que agrega una linea divisora entre los textos. -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Aspernatur expedita quae eum quisquam!
+        <hr>
+        Fuga assumenda earum, sed non modi inventore cum, sunt tempore voluptatum exercitationem repellendus. <br>
+        Quas fugit ea vero.
+    </p>
+
+    <!-- 
+    <h1>TITULO PRINCIPAL</h1>
+    <h2>TITULO SECUNDARIO</h2>
+    <h3>OTROS TITULOS</h3>
+    <h4>OTROS TITULOS</h4>
+    <h5>OTROS TITULOS</h5>
+    <h6>OTROS TITULOS</h6> 
+    -->
+
+    <h1>Titulo principal</h1>
+    <hr>
+    <!-- La etiqueta <pre></pre> tiene el mismo funcionamiento que la etiqueta <p> solo que esta pega los textos con formato (Respeta espacios y sangrias)-->
+    <pre> hola0
+        hola1
+    hola2
+hola 3              hola4
+    </pre>
+
+
+    <!-- La etiqueta <blockquote> sirve para citar texto -->
+    <blockquote>"La locura es hacer lo mismo una y otra vez y esperar resultados diferentes". Albert Einstein</blockquote>
+    <!-- Pero es mejor utilizar la etiqueta <q> sin las comillas, semanticamente queda mejor -->
+    <p><q cite="https:/www.lanacion.com">La locura es hacer lo mismo una y otra vez y esperar resultados diferentes.</q> Albert Einstein</p>
+
+    <p>En japones la forma de decir que todo lo arregla es: <q lang="japones">Nankurunaisa</q></p>
+
+
+    <h1>Teorema de pitagoras</h1>
+    <hr>
+    <!-- La etiqueta <sup> sirve para hacer exponentes -->
+    <p>hipotenusa<sup>2</sup> = cateto opuesto<sup>2</sup> + cateto adyacente<sup>2</sup></p>
+
+
+    <h1>Composicion quimica del agua</h1>
+    <hr>
+    <p>Agua es: H<sup>2</sup>O</p>
+
+    
+    <h1>Cuantos kilometros hay desde la tierra hasta la luna?</h1>
+    <hr>
+    <!-- La etiqueta <abbr> sirve para poner la definicion de una abreviatura -->
+    <p>Desde la tierra a la luna hay 384.400 <abbr title="Kilómetros">Kms</abbr></p>
+    
+    <h1>Que significa O.M.S.?</h1>
+    <hr>
+    <!-- De manera similar que lo anterior la etiqueta <acronym> sirve para dar la definición a un acronimo -->
+    <p>Coloca el mouse encima de esta palara para saberlo: <acronym title="Organizacion Mundial de la Salud">OMS</acronym></p>
+
+    <h1>Links</h1>
+    <hr>
+    <!-- El "target" sirve para definir donde se va a abrir la página seleccionada, si en la misma página del enlace o en una nueva -->
+    <a href="https:/www.github.com/PasandiLuka" target="_blank">HAZ CLICK AQUI PARA IR A MI REPO EN OTRA PESTAÑA</a> <br>
+    
+    <a href="https:/www.github.com/PasandiLuka" target="_self">HAZ CLICK AQUI PARA IR A MI REPO EN LA MISMA PESTAÑA</a><br>
+
+    <!-- Para autocompletar la casilla de destinatario de mail en el enlace, se puede hacer lo siguiente: -->
+    <a href="mailto:lukapasandi@gmail.com">ENVIAR MAIL AL CONTACTO</a><br>
+
+    <!-- De manera similiar se puede hacer con números telefonicos -->
+    <a href="tel:+541161303781">LLAMAR POR TELEFONO</a>
+</body>
+
+</html>

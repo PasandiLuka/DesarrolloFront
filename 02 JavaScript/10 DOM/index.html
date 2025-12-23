@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El DOM en JS</title>
+    <style>
+        .caja {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .borde-rojo {
+            border: 5px solid red;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manipulación del DOM</h1>
+
+    <!-- Selección de Elementos -->
+    <p id="parrafo1">Este es un párrafo con ID "parrafo1".</p>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <!-- Modificación de Estilos -->
+    <div id="caja1" class="caja">Soy una Caja</div>
+    <button id="btnColor">Cambiar Color</button>
+
+    <!-- Crear Elementos -->
+    <h3>Lista Dinámica</h3>
+    <ul id="lista">
+        <li>Item original</li>
+    </ul>
+    <button id="btnAgregar">Agregar Item</button>
+
+    <!-- Input -->
+    <h3>Entrada de Usuario</h3>
+    <input type="text" id="inputNombre" placeholder="Escribe tu nombre">
+    <button id="btnSaludar">Saludar</button>
+    <p id="mensajeSaludo"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

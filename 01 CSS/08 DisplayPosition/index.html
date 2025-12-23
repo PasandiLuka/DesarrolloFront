@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display y Position</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>Propiedades Display y Position</h1>
+
+    <h2>Display (Comportamiento de caja)</h2>
+    <div class="display-container">
+        <!-- Block -->
+        <div class="block">Soy un DIV (Block). Ocupo todo el ancho.</div>
+        <div class="block">Otro DIV (Block). Salto de línea forzado.</div>
+
+        <!-- Inline -->
+        <span class="inline">Soy un SPAN (Inline).</span>
+        <span class="inline">Solo ocupo lo necesario.</span>
+
+        <!-- Inline-Block -->
+        <div class="inline-block">Inline-Block (Puedo tener Width/Height)</div>
+        <div class="inline-block">Y me comporto como texto.</div>
+
+        <!-- None -->
+        <div class="none">Este elemento tiene display: none y no se ve ni ocupa espacio.</div>
+    </div>
+
+    <h2>Position (Posicionamiento)</h2>
+    <div class="position-container">
+        <div class="static">Static (Default)</div>
+        <div class="relative">Relative (Me muevo desde mi posición original)</div>
+        <div class="absolute">Absolute (Me muevo respecto a mi padre posicionado)</div>
+        <div class="sticky">Sticky (Me pego al hacer scroll)</div>
+    </div>
+
+    <!-- Elemento Fixed (fuera del flujo normal) -->
+    <div class="fixed">Fixed (Fijo en la pantalla)</div>
+
+    <div style="height: 1000px; padding: 20px;">
+        <p>Haz scroll hacia abajo para ver el efecto sticky y fixed.</p>
+    </div>
+
+</body>
+
+</html>

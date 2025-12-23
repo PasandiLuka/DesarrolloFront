@@ -1,0 +1,95 @@
+/* Animaciones y Transiciones */
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contenedor-flex {
+    display: flex;
+}
+
+/* 1. TRANSICIONES */
+.transicion {
+    background-color: crimson;
+    /* Qué propiedades animar, cuánto tiempo, función de tiempo */
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.transicion:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+}
+
+/* 2. TRANSFORMACIONES (Al hacer hover para ver efecto) */
+.rotar:hover {
+    transform: rotate(45deg);
+    /* Rota 45 grados */
+    background-color: purple;
+    transition: transform 0.3s;
+}
+
+.escalar:hover {
+    transform: scale(1.5);
+    /* Aumenta 1.5 veces su tamaño */
+    background-color: orange;
+    transition: transform 0.3s;
+}
+
+.trasladar:hover {
+    transform: translate(20px, -20px);
+    /* Mueve 20px derecha, 20px arriba */
+    background-color: green;
+    transition: transform 0.3s;
+}
+
+
+/* 3. ANIMACIONES (@KEYFRAMES) */
+
+.animacion-infinita {
+    /* nombre | duración | función tiempo | delay | iteraciones | dirección */
+    animation: cambioColor 3s infinite alternate;
+}
+
+@keyframes cambioColor {
+    0% {
+        background-color: crimson;
+        border-radius: 0%;
+    }
+
+    50% {
+        background-color: gold;
+        border-radius: 50%;
+        color: black;
+    }
+
+    100% {
+        background-color: rebeccapurple;
+        border-radius: 0%;
+        transform: rotate(360deg);
+    }
+}
+
+.rebote {
+    position: relative;
+    animation: rebotar 1s infinite ease-in-out alternate;
+}
+
+@keyframes rebotar {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 50px;
+    }
+}

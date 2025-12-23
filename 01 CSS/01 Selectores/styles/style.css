@@ -1,0 +1,47 @@
+/* El asterisco pisa todas las etiquetas, es util cuando queres implementar cosas para todo, como ejemplo los tipo de letra */
+    *{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+/* Esto es un selector de "elemento", todos los h1 van a ser modificados, estos se pueden combinar separandolos por comas */
+    /* Las etiquetas ya tienen atributos por defecto, como el tamaño de letra en los h1,h2 */
+    h1{
+        background-color: black;
+        color: white;
+    }
+    h2{
+        background-color: red;
+    }
+
+/* Este es un selector de clase, a diferencia del selector por identificador, este nos permite seleccionar varias etiquetas */
+    /* .seccion1{
+        background-color: black;
+        color: white;
+    }
+    .seccion2{
+        background-color: blue;
+        color: green;
+    } */
+    
+
+/* Este es un selector por "identificador" (#) es unico y solo se puede utilizar una vez, hay que hacer nombres coherentes. */
+    #parrafoSeleccionado{
+        color: violet;
+    }
+
+    .estilo-fuente-distinto{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    /* Selectores combinados, aquellas etiquetas que cumplan con las condiciones se les proporcionará el estilo indicado */
+    .seccion1.estilo-fuente-distinto{
+        text-align: end;
+    }
+    
+    h2.seccion3{
+        color: yellow;
+    }
+
+    p.seccion1{
+        background-color: green;
+    }   

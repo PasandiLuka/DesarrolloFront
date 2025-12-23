@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <hr>
+    <!-- Formulario de ejemplo
+    <form>
+            <input type="tipoDeInput" name="nombre" size="tamaño" id="identificador" value="texto por defecto" placeholder="TextoQueSeVeComoEjemplo">
+    </form> 
+    -->
+    <!--
+    form: Es el "div" para los formularios. 
+    label: Define un titulo o nombre para el input (es lo que se ve).
+    input: es la casilla donde se ingresa información, hay varios tipos de input. -->
+
+    <!-- NO SE DEBEN PONER VALIDACIONES EN EL HTML -->
+
+    <form action="envio.php" method="POST" target="_blank">
+        <!-- Texto -->
+        
+        <!-- La propiedad pattern permite filtrar las letras que se ingresan en el formulario.
+        La propiedad requiered fuerza a que este input sea completado 
+        -->
+        
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe aqui tu usuario" 
+        maxlength="10" minlength="5" 
+        pattern="[A-Za-z]{9}[0-9]" 
+        required>
+        <small>Debe tener 9 letras y 1 número</small>
+        <br>
+
+        <!-- La propiedad readonly permite que el valor no se pueda modificar -->
+        <label for="usuario2">Usuario: </label>
+        <input type="text" name="usuario2" id="usuario2" value="LukaPasandi" readonly>
+        <br>
+
+        <!-- Hace lo mismo que el anterior solo que muestra el texto en gris -->
+        <label for="usuario3">Usuario: </label>
+        <input type="text" name="usuario3" id="usuario3" value="LukaPasandi" disabled>
+        <br><br>
+        
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Escribe tu direccion mail" required>
+        <br><br>
+
+        <!-- Contraseña -->
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="Escribe aqui tu contraseña">
+        <br><br>
+
+        <!-- Checkboxes -->
+        <input type="checkbox" name="condiciones" id="condiciones"> ¿Esta de acuerdo con las condiciones del contrato?
+        <br><br>
+
+        <!-- Checkbox que permite la seleccion de varias opciones -->
+        <input type="checkbox" name="lenguajes" value="HTML">HTML
+        <input type="checkbox" name="lenguajes" value="CSS">CSS
+        <input type="checkbox" name="lenguajes" value="JavaScript">JavaScript
+        <input type="checkbox" name="lenguajes" value="React">React
+        <br><br>
+
+        <!-- Checkbox que permite la seleccion de 1 opción -->
+        <input type="radio" name="lenguajes" value="HTML">HTML
+        <input type="radio" name="lenguajes" value="CSS">CSS
+        <input type="radio" name="lenguajes" value="JavaScript">JavaScript
+        <input type="radio" name="lenguajes" value="React">React
+        <br><br>
+        
+
+        <!-- Numeros -->
+        <label for="programando">Años programando</label>
+        <input type="number" name="programando" id="programando" placeholder="Años programando">
+        <br><br>
+        
+
+        <!-- Archivos -->
+        <!-- El parametro multiple te permite subir varios archivos -->
+        <label for="archivo">Subi tu curriculum</label>
+        <input type="file" name="archivo" id="archivo" value="file" placeholder="Subi tu curriculum" multiple>
+        <br><br>
+
+        <label for="opinion">Feedback</label>
+        <textarea name="opinion" id="opinion" placeholder="Escribi tu opinion" rows="2" cols="10"></textarea>
+        <br><br>
+
+        <label for="pais"> Selecciona tu pais de origen:</label>
+        <select name="pais" id="pais">
+            <optgroup label="América">
+                <option value="Argentina">Argentina</option>
+                <!-- El parametro "selected" indica que esta opción va a ser la que se encuentre por defecto -->
+                <option value="México" selected="selected">México</option>
+                <option value="Uruguay">Uruguay</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="Francia">Francia</option>
+                <option value="Croacia">Croacia</option>
+                <option value="Marruecos">Marruecos</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar tus datos"> Submit
+        <br>
+        <input type="reset" value="Resetear formulario"> Reset
+        <br><br>
+
+        <!-- Esto envia un mensaje por pantalla como una alerta -->
+        <input type="button" onclick="alert('Aguante luka')" value="Saludando">
+        <br>
+        <button onclick="alert('Hola?')">Presioname</button>
+        <br><br>
+
+        <label for="fecha">Fecha de ingreso laboral</label>
+        <input type="date" name="fecha" id="fecha" max="2025-12-20">
+
+    </form>
+</body>
+
+</html>

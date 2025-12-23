@@ -1,0 +1,18 @@
+body{
+    /* Para hacer degradados */
+    /* background:linear-gradient(90deg, white 0%, red 20%, green 60%, blue 100%) */
+    /* background-image: url(../assets/img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed; */
+    background: 
+        black 
+        url(../assets/img/fondo.png) 
+        no-repeat 
+        bottom 
+        fixed;
+}
+
+p{
+    color: white;
+}

@@ -1,0 +1,59 @@
+/* Flexbox Guide */
+
+/* Estilos generales para los items */
+.item {
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item-large {
+    padding: 40px 20px;
+    /* Hacemos uno más alto para demostrar align-items */
+    background-color: tomato;
+}
+
+
+/* --- FLEXBOX--- */
+
+.flex-container {
+    display: flex;
+    /* Activa Flexbox */
+    background-color: #eee;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+/* 2. Justify Content */
+.justify {
+    justify-content: space-between;
+    /* start, end, center, space-around, space-evenly */
+}
+
+/* 3. Align Items */
+.align {
+    height: 150px;
+    /* Necesitamos altura para ver la alineación vertical */
+    align-items: center;
+    /* stretch(default), flex-start, flex-end, center, baseline */
+}
+
+/* 4. Column */
+.column {
+    flex-direction: column;
+    /* row(default), row-reverse, column, column-reverse */
+}
+
+/* 5. Wrap */
+.wrap {
+    flex-wrap: wrap;
+    /* nowrap(default), wrap, wrap-reverse */
+}
+
+.wrap .item {
+    width: 100px;
+    /* Le damos ancho fijo para que wrap actúe cuando no quepan */
+}

@@ -1,0 +1,72 @@
+/* El Modelo de Caja */
+
+/*
+    El modelo de caja se compone de 4 partes (de adentro hacia afuera):
+    1. Content: El contenido real.
+    2. Padding: Espacio transparente alrededor del contenido.
+    3. Border: Borde que rodea el padding y el contenido.
+    4. Margin: Espacio transparente fuera del borde.
+*/
+
+.caja-contenedor {
+    background-color: orange;
+    /* Representa el Margen visualmente para este ejemplo */
+    width: 300px;
+    padding: 20px;
+    /* Sería el margen del hijo */
+    border: 1px dashed black;
+}
+
+.caja-explicacion {
+    background-color: lightblue;
+    /* Content */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    width: 150px;
+    height: 100px;
+
+    padding: 20px;
+    /* Padding */
+    border: 5px solid black;
+    /* Border */
+    margin: 20px;
+    /* Margin */
+
+    /* Para visualizar el padding */
+    background-clip: content-box;
+    /* El color de fondo solo cubre el contenido */
+    box-shadow: inset 0 0 0 20px lightgreen;
+    /* Simulamos visualmente el padding con sombra interna verde */
+}
+
+.info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Box Sizing */
+.box-sizing {
+    margin-top: 40px;
+}
+
+.content-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.border-box {
+    box-sizing: border-box;
+    /* Recomendado */
+    width: 200px;
+    /* El ancho final SERÁ 200px, el padding y border se restan del contenido */
+    padding: 20px;
+    border: 5px solid blue;
+    background-color: #ddd;
+}

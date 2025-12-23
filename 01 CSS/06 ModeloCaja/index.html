@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Modelo de Caja</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>El Modelo de Caja (Box Model)</h1>
+
+    <div class="caja-contenedor">
+        <div class="caja-explicacion">
+            <p>Contenido (Content)</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <p><strong>Margin:</strong> Espacio externo (naranja).</p>
+        <p><strong>Border:</strong> Borde del elemento (negro).</p>
+        <p><strong>Padding:</strong> Espacio interno (verde).</p>
+        <p><strong>Content:</strong> El contenido real (azul).</p>
+    </div>
+
+    <div class="box-sizing">
+        <h2>Box Sizing</h2>
+        <div class="content-box">
+            box-sizing: content-box (Default)<br>
+            Width = 200px + padding + border
+        </div>
+        <div class="border-box">
+            box-sizing: border-box<br>
+            Width = 200px (incluye padding y border)
+        </div>
+    </div>
+
+</body>
+
+</html>

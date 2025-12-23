@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CSS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>Guía de Flexbox</h1>
+
+    <h2>1. Flexbox Container Basic</h2>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>2. Justify Content (Eje Principal - X)</h2>
+    <p>justify-content: space-between;</p>
+    <div class="flex-container justify">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>3. Align Items (Eje Cruzado - Y)</h2>
+    <p>align-items: center; (El contenedor tiene una altura definida)</p>
+    <div class="flex-container align">
+        <div class="item item-large">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h2>4. Flex Direction & Wrap</h2>
+    <p>flex-direction: column;</p>
+    <div class="flex-container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <p>flex-wrap: wrap;</p>
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+</body>
+
+</html>
