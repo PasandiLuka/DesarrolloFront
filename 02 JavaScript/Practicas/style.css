@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(rgb(255, 111, 111), rgb(92, 92, 255)) no-repeat fixed;
+}
+#Titulo{
+    color: rgb(168, 89, 241);
+    background: black;
+    text-align: center;            
+}
